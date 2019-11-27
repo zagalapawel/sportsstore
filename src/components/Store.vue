@@ -10,8 +10,8 @@
         <CategoryControls />
       </div>
 
-      <div class="col-9 p-2">
-        <product-list />
+      <div class="col-9 p-2 bg-warning">
+        <ProductList />
       </div>
     </div>
   </div>
@@ -23,3 +23,11 @@ export default {
   components: { ProductList, CategoryControls }
 };
 </script>
+
+<style>
+.container-fluid {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+}
+</style>

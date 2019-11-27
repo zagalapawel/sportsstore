@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="layout">
     <div v-for="p in products" v-bind:key="p.id" class="card m-1 p-1 bg-light">
       <h4>
         {{ p.name }}
@@ -9,7 +9,9 @@
       </h4>
       <div class="card-text bg-white p-1">{{ p.description }}</div>
     </div>
-    <page-controls />
+    <div class="pageCon">
+      <page-controls />
+    </div>
   </div>
 </template>
 <script>
@@ -30,3 +32,16 @@ export default {
   }
 };
 </script>
+
+<style>
+.layout {
+  min-height: 100%;
+  position: relative;
+  flex-direction: column;
+}
+.pageCon {
+  position: absolute;
+  min-width: 100%;
+  bottom: 0px;
+}
+</style>
