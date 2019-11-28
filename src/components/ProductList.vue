@@ -35,9 +35,9 @@ export default {
 
 <style>
 .layout {
-  min-height: 100%;
   position: relative;
   flex-direction: column;
+  flex-grow: 1;
 }
 .pageCon {
   position: absolute;
