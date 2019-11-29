@@ -1,5 +1,5 @@
 <template>
-  <div class="m-2" text-center>
+  <div class="m-2 text-center">
     <h2>Dziękujemy!</h2>
     <p>Dziękujemy za złożenie zamówienia o identyfikatorze {{orderId}}.</p>
     <p>Dostarczymy wybrane produkty tak szybko, jak to możliwe.</p>
