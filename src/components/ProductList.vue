@@ -28,14 +28,14 @@ export default {
   computed: {
     ...mapGetters({ products: "processedProducts" })
   },
-  filters: {
-    currency(value) {
-      return new Intl.NumberFormat("pl-PL", {
-        style: "currency",
-        currency: "PLN"
-      }).format(value);
-    }
-  },
+  // filters: {
+  //   currency(value) {
+  //     return new Intl.NumberFormat("pl-PL", {
+  //       style: "currency",
+  //       currency: "PLN"
+  //     }).format(value);
+  //   }
+  // },
   methods: {
     ...mapMutations({ addProduct: "cart/addProduct" }),
     handleProductAdd(product) {
