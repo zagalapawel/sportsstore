@@ -1,9 +1,8 @@
-var faker = require(faker);
+var faker = require("faker");
 var data = [];
 var categories = ["Sporty wodne", "Piłka nożna", "Szachy", "Bieganie"];
-faker.locate = "pl";
+faker.locale = "pl";
 faker.seed(100);
-
 for (let i = 1; i <= 500; i++) {
   var category = faker.helpers.randomize(categories);
   data.push({
@@ -14,7 +13,6 @@ for (let i = 1; i <= 500; i++) {
     price: faker.commerce.price()
   });
 }
-
 module.exports = function() {
   return {
     products: data,
