@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row my-2" v-for="c in categories" v-bind:key="c">
       <button
-        class="btn btn-block layout"
+        class="btn btn-block wrapp"
         v-on:click="setCurrentCategory(c)"
         v-bind:class="c == currentCategory ? 'btn-primary' : 'btn-secondary'"
       >{{c}}</button>
@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style>
-.layout {
+.wrapp {
   white-space: normal;
   word-wrap: break-word;
 }
